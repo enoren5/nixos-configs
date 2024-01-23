@@ -1,2 +1,2 @@
 # nixos-configs
-NixOS configuration files and maybe dot files too
+NixOS 'demo' VBox appialnce experimentation configuration files and maybe dot files too
