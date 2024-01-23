@@ -59,17 +59,6 @@
 #    displayManager.defaultSession = "xfce";
 #   };
 
-   programs.hyprland = {
-    # Install the packages from nixpkgs
-    enable = true;
-    # Whether to enable XWayland
-    xwayland.enable = true;
-
-    # Optional
-    # Whether to enable patching wlroots for better Nvidia support
-    # enableNvidiaPatches = true;
-  };
-
 # Let demo build as a trusted user.
 # nix.settings.trusted-users = [ "demo" ];
 
