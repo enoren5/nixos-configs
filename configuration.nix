@@ -6,6 +6,15 @@
   # nix.settings.experimental-features = [ "nix-command" "flakes" ];  
 
   nixpkgs.config.allowUnfree = true; 
+	  # Hyprland
+
+  # Next six lines courtesy of Jennifer Darlene on 22 Jan 2024 to get basic Hyprland working
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true; # allow x11 applications
+  };
+
+  console.useXkbConfig = true;
 
   environment.systemPackages = with pkgs; [
     # ... other packages ...
@@ -22,6 +31,19 @@
     xdg-desktop-portal-hyprland    
     vim
     git
+
+    # Next ten lines courtest of Jennifer Darlene on 22 Jan 2024 to get basic Hyprland working
+    waybar # status bar
+    mako # notification daemon
+    libnotify # for mako
+    swww # wallpaper daemon
+    kitty # terminal
+    rofi-wayland # wl equiv of rofi app launcher, window switcher ...
+    networkmanagerapplet # tray applet for network manager -- nm-applet
+    grim # screenshot utility
+    grimblast # grim helper
+    udiskie # automount removable media
+
   ];
 
 #   services.xserver = {
