@@ -31,7 +31,21 @@
     xdg-desktop-portal-hyprland    
     vim
     git
+    gedit
+    # gnome-terminal
     
+    neofetch
+    nnn # terminal file manager
+    eza
+    
+    # archives
+    zip
+    xz
+    unzip
+    p7zip
+
+    cowsay
+
     # Next ten lines courtest of Jennifer Darlene on 22 Jan 2024 to get basic Hyprland working
     waybar # status bar
     mako # notification daemon
@@ -45,6 +59,25 @@
     udiskie # automount removable media
 
   ];
+
+  environment.gnome.excludePackages = (with pkgs; [
+    gnome-photos
+    gnome-tour
+  ]) ++ (with pkgs.gnome; [
+    cheese # webcam tool
+    gnome-music
+    gnome-terminal
+    gedit # text editor
+    epiphany # web browser
+    geary # email reader
+    evince # document viewer
+    gnome-characters
+    totem # video player
+    tali # poker game
+    iagno # go game
+    hitori # sudoku game
+    atomix # puzzle game
+  ]);
 
 #   services.xserver = {
 #     enable = true;   
