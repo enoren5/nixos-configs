@@ -97,6 +97,10 @@
 #    displayManager.defaultSession = "xfce";
 #   };
 
+fonts.packages = with pkgs; [
+  (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+];
+
 # Let demo build as a trusted user.
 # nix.settings.trusted-users = [ "demo" ];
 
