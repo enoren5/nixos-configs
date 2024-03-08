@@ -16,6 +16,11 @@
   programs.sway.enable = true;
   console.useXkbConfig = true;
 
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+  };
+
   environment.systemPackages = with pkgs; [
     # ... other packages ...
     google-chrome
