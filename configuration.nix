@@ -23,12 +23,14 @@
 
   environment.systemPackages = with pkgs; [
     # ... other packages ...
+    blesh
     tig
     nix-output-monitor
     starship
     nerdfonts
     google-chrome
     # thunar
+    atuin
     curl
     wget
     vscode
