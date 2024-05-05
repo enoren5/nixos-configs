@@ -50,7 +50,8 @@
     xz
     unzip
     p7zip
-
+    findutils
+    mlocate
     cowsay
 
     # Next ten lines courtest of Jennifer Darlene on 22 Jan 2024 to get basic Hyprland working
