@@ -23,6 +23,7 @@
 
   environment.systemPackages = with pkgs; [
     # ... other packages ...
+    tig
     nix-output-monitor
     starship
     nerdfonts
