@@ -3,7 +3,7 @@
 {
   imports = [ <nixpkgs/nixos/modules/installer/virtualbox-demo.nix> ];
   
-  # nix.settings.experimental-features = [ "nix-command" "flakes" ];  
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];  
 
   nixpkgs.config.allowUnfree = true; 
 	  # Hyprland
@@ -25,6 +25,8 @@
     # ... other packages ...
     google-chrome
     # thunar
+    curl
+    wget
     vscode
     qbittorrent
     chromium
