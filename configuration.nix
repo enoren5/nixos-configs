@@ -23,6 +23,7 @@
 
   environment.systemPackages = with pkgs; [
     # ... other packages ...
+    nix-output-monitor
     starship
     nerdfonts
     google-chrome
