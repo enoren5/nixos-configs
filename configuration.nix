@@ -23,6 +23,7 @@
 
   environment.systemPackages = with pkgs; [
     # ... other packages ...
+    starship
     google-chrome
     # thunar
     curl
