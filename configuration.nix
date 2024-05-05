@@ -23,6 +23,8 @@
 
   environment.systemPackages = with pkgs; [
     # ... other packages ...
+    pfetch
+    screenfetch
     blesh
     tig
     nix-output-monitor
