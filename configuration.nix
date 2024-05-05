@@ -24,6 +24,7 @@
   environment.systemPackages = with pkgs; [
     # ... other packages ...
     starship
+    nerdfonts
     google-chrome
     # thunar
     curl
