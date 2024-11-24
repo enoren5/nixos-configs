@@ -36,7 +36,7 @@
     curl
     wget
     vscode
-    qbittorrent
+    # qbittorrent # Why? Allegedly non-secure
     chromium
     libreoffice
     python312
@@ -131,8 +131,8 @@ services.xserver.desktopManager.plasma5.enable = lib.mkForce false;
 services.displayManager.sddm.enable = lib.mkForce false;
 
 # Enable GDM/GNOME by uncommenting above two lines and two lines below.
-services.displayManager.gdm.enable = true;
-services.desktopManager.gnome.enable = true;
+services.xserver.displayManager.gdm.enable = true;
+services.xserver.desktopManager.gnome.enable = true;
 
 # Set your time zone.
 # time.timeZone = "Europe/Amsterdam";
