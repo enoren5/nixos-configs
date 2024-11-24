@@ -46,7 +46,7 @@
     xdg-desktop-portal-hyprland    
     vim
     git
-    gedit
+   #    gedit
     # gnome-terminal
     
     neofetch
@@ -83,7 +83,7 @@
     cheese # webcam tool
     gnome-music
     gnome-terminal
-    gedit # text editor
+    # gedit # text editor
     epiphany # web browser
     geary # email reader
     evince # document viewer
@@ -128,11 +128,11 @@ fonts.packages = with pkgs; [
 # If you prefer another desktop manager or display manager, you may want
 # to disable the default.
 services.xserver.desktopManager.plasma5.enable = lib.mkForce false;
-services.xserver.displayManager.sddm.enable = lib.mkForce false;
+services.displayManager.sddm.enable = lib.mkForce false;
 
 # Enable GDM/GNOME by uncommenting above two lines and two lines below.
-services.xserver.displayManager.gdm.enable = true;
-services.xserver.desktopManager.gnome.enable = true;
+services.displayManager.gdm.enable = true;
+services.desktopManager.gnome.enable = true;
 
 # Set your time zone.
 # time.timeZone = "Europe/Amsterdam";
